@@ -1,121 +1,150 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head> 
-  <meta charset="utf-8">
-  <title>Arabella's Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;700&family=Nunito+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<head>
+<meta charset="utf-8">
+<title>My Work Section</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;700&family=Nunito+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+  }
+
+  /* NAV BAR */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, #FFFFFF 0%, #ADBCC3 100%);
+    top: 0;
+    width: 100%;
+    font-family: "Nunito Sans";
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #ADBCC3;
+  }
+
+  /* HEADER SECTION */
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px;
+    background-color: #000000;
+  }
+
+  .header-container h1 {
+    margin-top: 100px;
+    color: white;
+    font-size: 7rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  /* TECHNOLGAP SECTION */
+  .technolgap-text-container {
+    background: linear-gradient(to top, #FFFFFF 0%, #ADBCC3 100%);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 50px;
+  }
+
+  .technolgap-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    font-family: "Instrument Sans", sans-serif;
+    width: 80%;
+    color: black;
+  }
+
+  .technolgap-text h1 {
+    font-size: 4rem;
+    line-height: 1.8;
+    text-align: center;
+    color: black;
+  }
+
+  .technolgap-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .technolgap-image {
+    align-self: flex-start; 
+    margin-top: 20px; 
+    width: 460px; 
+    height: auto; 
+  }
+
+  .imprint-container {
+    background: black;
+    padding: 500px;
+  }
   
-  <style>
-    body {
-      margin: 0;
-    }
-/*NAV BAR*/
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background: linear-gradient(to right, #FFFFFF 0%, #ADBCC3 100%);
-      top: 0;
-      width: 100%;
-      font-family: "Nunito Sans";
-    }
-
-    li {
-      float: right;
-    }
-
-    li a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 24px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover:not(.active) {
-      background-color: #ADBCC3;
-    }
+  .imprint-container h1{
+   font-size: 2rem;
     
-/*PAGE HEADING*/
-    h1{
-      margin-top: 100px;
-      color: white;
-      font-size: 7rem;
-      font-family: "Instrument Sans", sans-serif;
-    }
+    color: white;
+  }
 
-/* About Me Section */
-    .about-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      padding: 50px;
-      background-color: #000000;
-    }
-
-    .about-container h1, .about-container h2 {
-      color: white;
-      font-family: "Instrument Sans", sans-serif;
-    }
-
-    /* Centering the Paragraph (p) */
-    .about-text-container {
-      display: flex;
-        /* Centers the paragraph horizontally */
-      align-items: center;      /* Centers the ally */
-      height: 60vh;             /* Adjust height to control vertical centering */
-      padding: 20px;
-    }
-
-    .about-text {
-      font-size: 1.2rem;
-      line-height: 1.8;
-      text-align: center;       /* Center paragraph text inside the container */
-      font-family: "Nunito Sans", sans-serif;
-      width: 80%;               /* Optional: Adjust width as needed */
-      color: black;
-    }
-
-  </style>
+</style>
 </head>
 <body>
 
+<!-- Nav Bar -->
 <ul>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#mywork">My Work</a></li>
-  <li><a href="#aboutme">About Me</a></li>
+  <li><a href="#contact">contact</a></li>
+  <li><a href="#mywork">my work</a></li>
+  <li><a href="#aboutme">about</a></li>
 </ul>
 
-<!-- About Me Section -->
-<div class="about-container">
-  <div style="width: 50%;"> 
+<!-- Header Section -->
+<div class="header-container">
+  <div style="width: 50%;">
     <h1>what i've been up to lately... </h1>
   </div>
 </div>
 
-<!-- Centered Paragraph Section -->
-<div class="about-text-container">
-  <div class="about-text">
-    <p>Starting in June 2024,
-      I have been directing the
-visual rebranding for Technolgap, an Ottawa-
-based student tech organization.   
-
-As the Director of Design and Visual
-Communications, I spearheaded the redesign
-of the organization’s logo, developed a new
-colour palette, and crafted a comprehensive
-branding guide. My role currently involves
-refreshing Technolgap’s brand identity to
-enhance its online presence and ensure
-consistency across all visual materials.</p>
+<!-- Technolgap Section -->
+<div class="technolgap-text-container">
+  <div class="technolgap-text">
+    <h1>
+      RE-IMAGINING IDENTITY
+    </h1>
+    <h2>
+      a fresh take on technolgap's visual brand
+    </h2>
+    <p>Starting in June 2024, I have been directing the visual rebranding for Technolgap, an Ottawa-based student tech organization. As the Director of Design and Visual Communications, I spearheaded the redesign of the organization’s logo, developed a new colour palette, and crafted a comprehensive branding guide. My role currently involves refreshing Technolgap’s brand identity to enhance its online presence and ensure consistency across all visual materials.</p>
   </div>
-</div>
-   
 
+  <img class="technolgap-image" src="Frame 6.png" alt="colour palette">
+</div>
+
+<!-- Imprint Section -->
+<div class="imprint-container">
+   <div style="width: 50%;">
+     <h1>Imprint </h1>
+  </div>
+  </div>
 </body>
 </html>
