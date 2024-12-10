@@ -11,14 +11,13 @@
     body {
       margin: 0;
     }
-
+/*NAV BAR*/
     ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
       background: linear-gradient(to right, #FFFFFF 0%, #ADBCC3 100%);
-      position: fixed;
       top: 0;
       width: 100%;
       font-family: "Nunito Sans";
@@ -39,56 +38,48 @@
     li a:hover:not(.active) {
       background-color: #ADBCC3;
     }
-
-    h1 {
+    
+/*PAGE HEADING*/
+    h1{
       margin-top: 100px;
       color: white;
-      text-align: right;
+      font-size: 7rem;
       font-family: "Instrument Sans", sans-serif;
     }
 
-    div p {
-      float: right;
-      color: white;
-      width: 400px;
-      padding: 0px;
-      font-family: "Nunito Sans", sans-serif;
-    }
-
-    .secondhalf {
-      padding: 50px;
-      background: linear-gradient(to right, #FFFFFF 0%, #ADBCC3 100%);
-      color: black;
-      font-family: "Nunito Sans", sans-serif;
-    }
-
-    /* Flexbox container for columns */
-    .row {
+/* About Me Section */
+    .about-container {
       display: flex;
-      justify-content: space-between;
-      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 50px;
+      background-color: #000000;
     }
 
-    .column {
-      width: 30%;
+    .about-container h1, .about-container h2 {
+      color: white;
+      font-family: "Instrument Sans", sans-serif;
     }
 
-    .column h2, .column p {
+    /* Centering the Paragraph (p) */
+    .about-text-container {
+      display: flex;
+        /* Centers the paragraph horizontally */
+      align-items: center;      /* Centers the ally */
+      height: 60vh;             /* Adjust height to control vertical centering */
+      padding: 20px;
+    }
+
+    .about-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: center;       /* Center paragraph text inside the container */
+      font-family: "Nunito Sans", sans-serif;
+      width: 80%;               /* Optional: Adjust width as needed */
       color: black;
     }
 
-    /* Responsive layout for smaller screens */
-    @media screen and (max-width: 600px) {
-      .row {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .column {
-        width: 100%;
-        text-align: center;
-      }
-    }
   </style>
 </head>
 <body>
@@ -99,31 +90,32 @@
   <li><a href="#aboutme">About Me</a></li>
 </ul>
 
-<div style="padding:50px;margin-top:0px;background-color:#000000;height:500px;">
-  <h1>About Me</h1>
-  <p>Hi! I’m Arabella, a second year student at the University of Waterloo, studying Global Business and Digital Arts. I’m passionate about using digital media and design to tell compelling stories that captivate and engage audiences. When I’m not immersed in my creative projects, you can find me café hopping downtown or re-watching the Scream franchise!</p>
-</div>
-
-<div class="secondhalf">
-  <h1>MY BIG THREE</h1>
-
-  <div class="row">
-    <div class="column">
-      <h2>Design with purpose</h2>
-      <p>I always consider the emotional impact of everything I create on audiences and users, ensuring that each design effectively resonates and communicates its intended message.</p>
-    </div>
-    
-    <div class="column">
-      <h2>Balance creativity and functionality</h2>
-      <p>In my designs, I strive to create a balance between aesthetic appeal and practical usability.</p>
-    </div>
-    
-    <div class="column">
-      <h2>Stay current and adapt</h2>
-      <p>Design tools and trends constantly evolve. I ensure to stay updated on industry trends, adapting my skills and techniques accordingly.</p>
-    </div>
+<!-- About Me Section -->
+<div class="about-container">
+  <div style="width: 50%;"> 
+    <h1>what i've been up to lately... </h1>
   </div>
 </div>
+
+<!-- Centered Paragraph Section -->
+<div class="about-text-container">
+  <div class="about-text">
+    <p>Starting in June 2024,
+      I have been directing the
+visual rebranding for Technolgap, an Ottawa-
+based student tech organization.   
+
+As the Director of Design and Visual
+Communications, I spearheaded the redesign
+of the organization’s logo, developed a new
+colour palette, and crafted a comprehensive
+branding guide. My role currently involves
+refreshing Technolgap’s brand identity to
+enhance its online presence and ensure
+consistency across all visual materials.</p>
+  </div>
+</div>
+   
 
 </body>
 </html>
