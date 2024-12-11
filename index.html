@@ -89,21 +89,36 @@
     text-align: right;
     color: 2D6D68;
   }
+  
+  .image-container {
+  display: flex;
+  gap: 150px;
+}
 
-  .technolgap-image {
+  .technolgap-image1 {
     align-self: flex-start; 
     margin-top: 20px; 
     width: 460px; 
     height: auto; 
   }
   
+  .technolgap-image2 {
+    align-self: flex-start; 
+    margin-top: 50px; 
+    width: 460px; 
+    height: auto; 
+  }
+  
   /* IMPRINT SECTION */
   .imprint-container {
-    background: #EDF2F4;
-    padding: 150px;
-    font-family: "Instrument Sans", sans-serif;
-    width: 80%
-  }
+  background: #EDF2F4;
+  padding: 150px;
+  font-family: "Instrument Sans", sans-serif;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically align items in the container */
+  justify-content: space-between; /* Create space between text and image */
+  width: 80%;
+}
   
   .imprint-container h1{
    font-size: 6rem;
@@ -128,6 +143,13 @@
     color: black;
   }
   
+  .imprint-image {
+    align-self: flex-start; 
+    margin-top: 50px; 
+    width: 460px; 
+    height: auto; 
+  }
+  
   /* MISCELLANEOUS */
   .miscellaneous-container{
     background: black;
@@ -138,8 +160,9 @@
    font-size: 5rem;
    line-height: 1;
    color: white;
-   text-align: center;
+   text-align: left;
    font-family: "Instrument Sans", sans-serif;
+  margin-bottom: 20px;
   }
 
 </style>
@@ -173,22 +196,27 @@
   </div>
 
   <div class="image-container">
-    <img class="technolgap-image" src="Frame 6.png" alt="colour palette">
-    <img class="technolgap-image" src="Frame 7.png" alt="typography">
+    <img class="technolgap-image1" src="Frame 6.png" alt="colour palette">
+    <img class="technolgap-image2" src="Frame 8.png" alt="typography">
   </div>
 </div>
   
 <!-- Imprint Section -->
 <div class="imprint-container">
-   <div style="width: 50%;">
-     <h1>AMPLIFYING STUDENT VOICES</h1>
-     <h2>
-       informing the uwaterloo community with imprint
-     </h2>
-     <p>
-Over the past semester, I have been creating social media content for the university's student-run publication. My role involves conducting interviews with students to capture their opinions on various topics related to the university, culture, and current events.</p>
+  <div class="text">
+    <h1>AMPLIFYING STUDENT VOICES</h1>
+    <h2>
+      informing the uwaterloo community with imprint
+    </h2>
+    <p>
+      Over the past semester, I have been creating social media content for the university's student-run publication. My role involves conducting interviews with students to capture their opinions on various topics related to the university, culture, and current events.
+    </p>
   </div>
+
+  <div class="image-container">
+    <img class="imprint-image" src="Frame 12.png" alt="Imprint TikTok page">
   </div>
+</div>
   
 <!-- Miscellaneous Work --> 
 <div class="miscellaneous-container">
