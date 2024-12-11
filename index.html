@@ -11,35 +11,40 @@
 <style>
   body {
     margin: 0;
+    font-family: "Nunito Sans", sans-serif;
   }
 
-  /* NAV BAR */
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: black;
-    top: 0;
-    width: 100%;
-    font-family: "Nunito Sans";
-  }
+   /* NAV BAR */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background: black;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
 
-  li {
-    float: right;
-  }
+    li {
+      float: right;
+    }
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 24px 16px;
-    text-decoration: none;
-  }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-  li a:hover:not(.active) {
-    background-color: #ADBCC3;
-  }
+    li a:hover:not(.active) {
+      color: #ADBCC3;
+    }
+
+    .active {
+      background-color: #ADBCC3;
+    }
 
   /* HEADER SECTION */
   .header-container {
@@ -151,19 +156,32 @@
   }
   
   /* MISCELLANEOUS */
-  .miscellaneous-container{
-    background: black;
-    padding: 150px;
-  }
-  
-  .miscellaneous-container h1{
-   font-size: 5rem;
-   line-height: 1;
-   color: white;
-   text-align: left;
-   font-family: "Instrument Sans", sans-serif;
+  .miscellaneous-container {
+  background: black;
+  padding: 150px;
+}
+
+.miscellaneous-container h1 {
+  font-size: 5rem;
+  line-height: 1;
+  color: white;
+  text-align: left;
+  font-family: "Instrument Sans", sans-serif;
   margin-bottom: 20px;
-  }
+}
+
+.miscellaneous-container .image-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  gap: 20px; 
+}
+
+.miscellaneous-container img {
+  width: 30%; 
+  height: auto;
+  border-radius: 10px;
+}
 
 </style>
 </head>
@@ -171,9 +189,10 @@
 
 <!-- Nav Bar -->
 <ul>
-  <li><a href="#contact">contact</a></li>
-  <li><a href="#mywork">my work</a></li>
+  <li><a href="#home">home</a></li>
   <li><a href="#aboutme">about</a></li>
+  <li><a href="#mywork">my work</a></li>
+  <li><a href="#contact">contact</a></li>
 </ul>
 
 <!-- Header Section -->
@@ -220,8 +239,11 @@
   
 <!-- Miscellaneous Work --> 
 <div class="miscellaneous-container">
-  <div style="width: 50%;">
+  <div style="width: 100%;">
     <h1>MISCELLANEOUS WORK</h1>
+    <img src="mag33.jpg" alt="Personal Magazine">
+    <img src="a1-logo.png" alt="a1-logo">
+    <img src="JFS cover (1).png" alt="Magazine Cover">
   </div>
   </div>
 </body>
